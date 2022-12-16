@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+    font-family: sans-serif;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    /**
+    *! style rules for content Section
+    **/
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgb(55, 169, 79);
+        width: 55%;
+        min-height: 100vh;
+        padding: 10px 20px;
+    }
+    
+    .text{
+        text-align: center;
+        color: white;
+        font-size: 18px;
+    }
+    /**
+    *! style rules for form Section
+    **/
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-start;
+        width: 45%;
+        padding-left: 50px;
+        /* max-width: 400px; */
+        margin:50px;
+        
+        border: 1px solid black;
+    }
+    .title{
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    form div input{
+        width: 150%;
+        height: 40px;
+        text-align: left;
+        outline: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid black;
+        padding: 0 30px;
+    }
+    form div{
+        margin-bottom: 18px;
+        position: relative;
+    }
+    button{
+        margin-top: 15px;
+        width: 50%;
+        height: 35px;
+        background-color: #000000;
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s ease;
+    }
+    button:hover{
+        color: black;
+        background-color: transparent;
+    }
+    p{
+        margin-top: 20px;
+        text-align: center;
+    }
+    form div textarea{
+        outline: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid black;
+
+    }
+
+    @media (max-width: 900px){
+        .container{
+            flex-direction: column;
+        }
+        form, .content{
+            width: 100% !important;
+        }
+        .btn{
+            flex-direction: column;
+        }
+        .image{
+            height: 70vh;
+        }
+    }
+    
+    @media (max-width: 425px){
+        form{
+            padding: 20px;
+        }
+    }
+    
